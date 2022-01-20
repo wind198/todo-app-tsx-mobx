@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.container-app {
+  min-width: 500px;
+  width: 50%;
+  margin: auto;
+  background-color: #ffffa4;
+  overflow: auto;
+}
+
+.app__header {
+  text-align: center;
+  padding: 1rem 0;
+}
+.new-todo {
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+.input-field {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 5px #e1e0e0, 0 0 15px #ffffff78;
+  outline: none;
+  &:focus {
+    box-shadow: 0 0 2px #2b95fd, 0 0 15px #288ef53b;
+  }
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  min-height: 54px;
+}
+.single-todo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.single-todo__title--completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.single-todo__remove {
+  margin-right: 0;
+  margin-left: auto;
+}
+.single-todo__completed-checkbox {
+  margin: 0 0.5rem;
+}
+.single-todo__title {
+  font-size: 1.1rem;
+}
+
+.auxiliary {
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toolbar button {
+  margin-right: 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.status {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
